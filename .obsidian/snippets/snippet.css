@@ -1,0 +1,408 @@
+/* --text-accent: #0fb6d6;  */
+.theme-dark {
+  --background-primary: #171923;
+  --background-primary-alt: #13151e;
+  --background-secondary: #13151d;
+  --background-secondary-alt: #252a38;
+  --em: #1524af;
+  --strong: #ff2e21;
+  --hr: #de281b;
+  --bloq-bg: rgb(1, 1, 49);
+  --text-normal: #b5b5bd;
+  --text-sub-accent: #f4569d;
+  --text-dim: #45aaff;
+  --text-faint: #b5b5bd;
+  /* --h1: #10c722;
+  --h2: #10c722;
+  --h3: #bc1e9a;
+  --h4: #d5a454;
+  --h5: #bc1e9a;
+  --h6: #10c722; */
+  --text-link: #5643d1;
+  --text-a: #6bcafb;
+  --text-a-hover: #6bcafb;
+  --text-mark: #263d92;
+    /* --background-secondary: #13151d; */
+  /* --code-background: var(--background-secondary); */
+  --code-background: #1d1e2e;
+  --interactive-accent: rgba(14, 210, 247, 0.5);
+  --interactive-accent-hover: rgba(14, 210, 247, 0.8);
+  --interactive-before: #5e6565;
+  --blockquote-border: #4aa8fb;
+  --tag-background: rgba(14, 210, 247, 0.15);
+  --interactive-accent-rgb: #3dd7fb;
+  --font-family-editor: 'Rubik';
+  --font-family-preview: 'Rubik';
+  --bg-sub-accent-55: rgba(244, 86, 157, 0.55);
+  --bg-accent-55: rgba(14, 210, 247, 0.55);
+  --bg-accent-25: rgba(14, 210, 247, 0.25);
+  --text-highlight-bg: rgba(244, 86, 157, 0.25);
+  --background-modifier-border: rgba(14, 210, 247, 0.05);
+  --test-color: rgb(122, 162, 247);
+  --editor-border-color: #101014;
+}
+
+/* 
+ */
+  .markdown-preview-section h1,
+  .cm-header-1 {
+    color: var(--h1);
+    /* line-height: 1rem; */
+  }
+
+  .markdown-preview-section h2,
+  .cm-header-2 {
+    color: var(--h2);
+    line-height: 1rem;
+  }
+
+  .markdown-preview-section h3,
+  .cm-header-3 {
+    color: var(--h3);
+    line-height: 1rem;
+  }
+
+  .markdown-preview-section h4,
+  .cm-header-4 {
+    color: var(--h4);
+    line-height: 1rem;
+  }
+
+  .markdown-preview-section h5,
+  .cm-header-5 {
+    color: var(--h5);
+    line-height: 1rem;
+  }
+
+  .markdown-preview-section h6,
+  .cm-header-6 {
+    color: var(--h6);
+    line-height: 1rem;
+  }
+
+  /* for editor */
+  .cm-quote {
+    color: var(--text-normal) !important;
+  }
+
+  .cm-em, em {
+    color: var(--em) !important;
+    font-style: normal;   
+  }
+
+  .cm-strong,
+  strong{
+    color: var(--strong) !important;
+  }
+
+  /* for preview */
+  .markdown-preview-view blockquote {
+    /* background-color: var(--bloq-bg); */
+    background-color: var(--code-background);
+    border: 0px solid;
+    border-color: #baa7ec !important;
+    border-left-width: 5px !important;
+    border-radius: 4px !important;
+    color: var(--bloq-color);
+    font-size: 15px;
+    line-height: 1.5em;
+    margin: 10 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 6px 8px rgba(85,102,119,.03), 0 1px 1px rgba(85,102,119,.4) !important;
+  }
+
+  /* Vertical centering of text in blockquote */
+  blockquote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /**************************************
+| HR STYLES
+| -------------------------------------
+| Obsidian main controls related.
+/**************************************/
+.cm-line hr,
+.markdown-preview-view hr {
+  margin-block-start: 4em !important;
+  margin-block-end: 4em !important;
+  border: none;
+  height: 0;
+  border-bottom: 1px solid;
+  border-image-slice: 1;
+  border-width: 1px;
+  border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
+}
+
+.cm-line hr::before,
+/* .markdown-preview-view hr::before {
+  content: '§';
+  display: inline-block;
+  position: absolute;
+  content: '§';
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(60deg);
+  transform-origin: 50% 50%;
+  padding: 0.5rem;
+  color: transparent;
+  background-color: #f1f3f5;
+}
+.cm-line hr::after,
+.markdown-preview-view hr::after {
+  content: '§';
+  display: inline-block;
+  position: absolute;
+  content: '§';
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(60deg);
+  transform-origin: 50% 50%;
+  padding: 0.5rem;
+  color: var(--text-sub-accent) ;
+  background-color: var(--hr);
+} */
+
+.markdown-preview-view ul > li.task-list-item.is-checked,
+.cm-li.task-list-item.is-checked {
+  text-decoration: none !important;
+  color: var(--interactive-accent) !important;
+}
+
+/* .markdown-preview-view pre {
+  background-color: #252a38 !important;
+} */
+
+/** code syntax theme **/
+.theme-dark .cm-s-obsidian .HyperMD-codeblock span.cm-comment {
+  color: #6b9955;
+}
+.theme-dark .cm-s-obsidian .HyperMD-codeblock span.cm-string,
+.theme-dark .cm-s-obsidian .HyperMD-codeblock span.cm-string-2 {
+  color: #ce9178;
+}
+.theme-dark .cm-s-obsidian .HyperMD-codeblock span.cm-number {
+  color: #b5cfa9;
+}
+.theme-dark .cm-s-obsidian pre.HyperMD-codeblock span.cm-variable {
+  color: #50fa7b;
+}
+.theme-dark .cm-s-obsidian pre.HyperMD-codeblock span.cm-variable-2 {
+  color: white;
+}
+.theme-dark .cm-s-obsidian pre.HyperMD-codeblock span.cm-def {
+  color: #50fa7b;
+}
+
+.theme-dark .cm-s-obsidian pre.HyperMD-codeblock span.cm-operator {
+  color: #ff79c6;
+}
+.theme-dark .cm-s-obsidian pre.HyperMD-codeblock span.cm-keyword {
+  color: #ff79c6;
+}
+.theme-dark .cm-s-obsidian pre.HyperMD-codeblock span.cm-atom {
+  color: #bd93f9;
+}
+.theme-dark .cm-s-obsidian pre.HyperMD-codeblock span.cm-meta {
+  color: #f8f8f2;
+}
+.theme-dark .cm-s-obsidian pre.HyperMD-codeblock span.cm-tag {
+  color: #ff79c6;
+}
+.theme-dark .cm-s-obsidian pre.HyperMD-codeblock span.cm-attribute {
+  color: #50fa7b;
+}
+.theme-dark .cm-s-obsidian pre.HyperMD-codeblock span.cm-qualifier {
+  color: #50fa7b;
+}
+.theme-dark .cm-s-obsidian pre.HyperMD-codeblock span.cm-property {
+  color: #66d9ef;
+}
+.theme-dark .cm-s-obsidian pre.HyperMD-codeblock span.cm-builtin {
+  color: #50fa7b;
+}
+.theme-dark .cm-s-obsidian pre.HyperMD-codeblock span.cm-variable-3,
+.theme-dark .cm-s-obsidian pre.HyperMD-codeblock span.cm-type {
+  color: #ffb86c;
+}
+
+.theme-dark .token.comment {
+  color: #6b9955;
+}
+
+.theme-dark .token.prolog {
+  color: rgb(216, 216, 21);
+}
+
+.theme-dark .token.tag {
+  color: rgba(220, 104, 170, 1);
+}
+
+.theme-dark .token.entity {
+  color: rgba(139, 233, 253, 1);
+}
+
+.theme-dark .token.atrule {
+  color: rgba(98, 239, 117, 1);
+}
+
+.theme-dark .token.url {
+  color: rgba(102, 217, 239, 1);
+}
+
+.theme-dark .token.selector {
+  color: rgb(198, 198, 43);
+}
+
+.theme-dark .token.string {
+  color: #ce9178;
+}
+
+.theme-dark .token.property {
+  color: #9dddff;
+}
+
+.theme-dark .token.important {
+  color: rgb(141, 121, 255);
+  font-weight: bold;
+}
+
+.theme-dark .token.punctuation {
+  color: #ffd702;
+}
+
+.theme-dark .token.number {
+  color: #b5cfa9;
+}
+
+.theme-dark .token.function {
+  color: #dcdcab;
+}
+
+.theme-dark .token.class-name {
+  color: #9dddff;
+}
+
+.theme-dark .token.keyword {
+  color: #569cd6;
+}
+
+.theme-dark .token.boolean {
+  color: #569cd6;
+}
+
+.theme-dark .token.operator {
+  color: rgba(139, 233, 253, 1);
+}
+
+.theme-dark .token.char {
+  color: #ce9178;
+}
+
+.theme-dark .token.regex {
+  color: #ce9178;
+}
+
+.theme-dark .token.variable {
+  color: rgba(80, 250, 123, 1);
+}
+
+.theme-dark .token.constant {
+  color: #dcdcab;
+}
+
+.theme-dark .token.symbol {
+  color: rgb(236, 20, 208);
+}
+
+.theme-dark .token.builtin {
+  color: #bababa;
+}
+
+.theme-dark .token.attr-value {
+  color: #7ec699;
+}
+
+.theme-dark .token.deleted {
+  color: #50c1ff;
+}
+
+.theme-dark .token.namespace {
+  color: #50c1ff;
+}
+
+.theme-dark .token.bold {
+  font-weight: bold;
+}
+
+.theme-dark .token.italic {
+  font-style: italic;
+}
+
+.theme-dark .token {
+  color: #50c1ff;
+}
+
+.language-cpp .theme-dark .token.string {
+  color: #8be9fd;
+}
+
+.language-c .theme-dark .token.string {
+  color: #8be9fd;
+}
+
+.theme-dark .language-css .token.selector {
+  color: rgba(80, 250, 123, 1);
+}
+
+.theme-dark .language-css .token.property {
+  color: rgba(255, 184, 108, 1);
+}
+
+.language-java span.theme-dark .token.class-name {
+  color: #8be9fd;
+}
+
+.language-java .theme-dark .token.class-name {
+  color: #8be9fd;
+}
+
+.language-markup .theme-dark .token.attr-value {
+  color: rgba(102, 217, 239, 1);
+}
+
+.language-markup .theme-dark .token.tag {
+  color: rgba(80, 250, 123, 1);
+}
+
+.language-objectivec .theme-dark .token.property {
+  color: #66d9ef;
+}
+
+.language-objectivec .theme-dark .token.string {
+  color: #50fa7b;
+}
+
+.language-php .theme-dark .token.boolean {
+  color: #8be9fd;
+}
+
+.language-php .theme-dark .token.function {
+  color: #ff79c6;
+}
+
+.language-php .theme-dark .token.keyword {
+  color: #66d9ef;
+}
+
+.language-ruby .theme-dark .token.symbol {
+  color: #8be9fd;
+}
+
+.language-ruby .theme-dark .token.class-name {
+  color: #cfcfc2;
+}
